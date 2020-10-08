@@ -27,7 +27,7 @@ meta 태그는 기본적으로 빈 요소이기 때문에 시작 태그만 존�
 - property="og:…"
     - 오픈 그래프(Open Graph, OG) 설정
     - 오픈 그래프는 웹 페이지가 소셜 미디어로 공유될 때 표시되는 카드 형식
-    - 카카오톡, 페이스북 등 SNS에서 사용
+    - 카카오톡, 페이스북 등 SNS에서 사용함
 ```
 <meta http-equiv="X-UA-Compatible" content="IE=edge">  // 호환성 보기 기능 활성화
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

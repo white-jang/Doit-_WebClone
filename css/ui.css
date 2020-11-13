@@ -146,4 +146,124 @@ footer>a.instar:hover {
 #container {
     width: 100%;
     height: 100%;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#container .content {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+}
+
+#container #menu1 {
+    left: 0%;
+    background: url(../images/content_bg1.png) repeat;
+}
+
+#container #menu2 {
+    left: 25%;
+    background: url(../images/content_bg2.png) repeat;
+}
+
+#container #menu3 {
+    left: 50%;
+    background: url(../images/content_bg3.png) repeat;
+}
+
+#container #menu4 {
+    left: 75%;
+    background: url(../images/content_bg4.png) repeat;
+}
+
+/* -------디자인적인 구성이므로 가상 선택자만 이용하여 제작 (정보 전달 목적 X)------- */
+/* -------클릭하면 상세 페이지가 보이는...------- */
+
+#container .content:before,
+#container .content:after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+#container .content:before {
+    /* 각 content 앞에 들어가는 라인 (border) */
+    width: 1px;
+    height: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    z-index: 4;
+}
+
+#container .content:after {
+    left: 30px;
+    top: 180px;
+    /* content 글자들의 위치 조정 */
+    font-size: 25px;
+    font-weight: 700;
+    color: #ed3140;
+}
+
+#container #menu1:after {
+    content: "회사소개";
+}
+
+#container #menu2:after {
+    content: "도서소개";
+}
+
+#container #menu3:after {
+    content: "FAQ";
+}
+
+#container #menu4:after {
+    content: "Contact Us";
+}
+
+#container .content .conbox:before {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+#container #menu1 .conbox:before {
+    background: url(../images/main_ico1.png) no-repeat;
+    width: 350px;
+    height: 260px;
+    right: -13px;
+    top: 130px;
+    background-size: 100%;
+}
+
+#container #menu2 .conbox:before {
+    background: url(../images/main_ico2.png) no-repeat;
+    width: 180px;
+    height: 470px;
+    right: -30px;
+    top: 180px;
+    background-size: 100%;
+}
+
+#container #menu3 .conbox:before {
+    background: url(../images/main_ico3.png) no-repeat;
+    width: 270px;
+    height: 310px;
+    right: -60px;
+    top: 30px;
+    background-size: 100%;
+}
+
+#container #menu4 .conbox:before {
+    background: url(../images/main_ico4.png) no-repeat;
+    width: 350px;
+    height: 400px;
+    right: -170px;
+    top: 100px;
+    background-size: 100%;
+}
+
+#container .content h2 {
+    opacity: 0;
 }

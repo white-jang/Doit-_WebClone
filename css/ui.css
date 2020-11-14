@@ -157,6 +157,31 @@ footer>a.instar:hover {
     position: absolute;
 }
 
+/* 자바스크립트로 슬라이드 효과를 내기 위한 클래스들 */
+
+#container .content.this {
+    width: 100%;
+    left: 0 !important;
+}
+
+#container .content.prev {
+    width: 100%;
+    left: -100% !important;
+}
+
+#container .content.next {
+    width: 100%;
+    left: 100% !important;
+}
+
+#container .content.this:before,
+#container .content.this:after,
+#container .content.this .conbox:before {
+    opacity: 0;
+}
+
+/* --------------------------- */
+
 #container #menu1 {
     left: 0%;
     background: url(../images/content_bg1.png) repeat;

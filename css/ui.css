@@ -16,6 +16,7 @@ header .logo-box {
     position: absolute;
     right: 35px;
     top: 75px;
+    cursor: pointer;
 }
 
 header .logo-box img {
@@ -155,6 +156,7 @@ footer>a.instar:hover {
     width: 25%;
     height: 100%;
     position: absolute;
+    transition: all .5s;
 }
 
 /* 자바스크립트로 슬라이드 효과를 내기 위한 클래스들 */
@@ -291,4 +293,57 @@ footer>a.instar:hover {
 
 #container .content h2 {
     opacity: 0;
+}
+
+#container .content.this h2 {
+    height: auto;
+    padding: 30px 0 20px 50px;
+    color: black;
+    position: relative;
+    background: white;
+    font-size: 28px;
+    font-weight: 400;
+    opacity: 1;
+}
+
+#container .content.this h2:after {
+    content: "";
+    width: 100%;
+    height: 8px;
+    background: #ed3140;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#container .content .conbox .content_wrap {
+    opacity: 0;
+}
+
+#container .content.this .conbox .content_wrap {
+    padding: 30px 50px 50px 50px;
+    opacity: 1;
+}
+
+/* 메인 페이지 애니메이션 효과 */
+
+#container .content {
+    top: -100%;
+    transition: all .8s;
+}
+
+#container .content:nth-child(2) {
+    transition-delay: .3s;
+}
+
+#container .content:nth-child(3) {
+    transition-delay: .6s;
+}
+
+#container .content:nth-child(4) {
+    transition-delay: .8s;
+}
+
+#container.start .content {
+    top: 0;
 }

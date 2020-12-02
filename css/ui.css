@@ -178,8 +178,24 @@ footer>a.instar:hover {
 
 #container .content.this:before,
 #container .content.this:after,
-#container .content.this .conbox:before {
+#container .content.this .conbox:before,
+#container .content.prev:before,
+#container .content.prev:after,
+#container .content.prev .conbox:before,
+#container .content.next:before,
+#container .content.next:after,
+#container .content.next .conbox:before {
     opacity: 0;
+    transition: all .6s;
+    transition-delay: .3s;
+}
+
+#container .content.this .conbox:before {
+    transform: translate3d(300px, 0, 0);
+}
+
+#container .content.this:after {
+    transform: translate3d(-300px, 0, 0);
 }
 
 /* --------------------------- */
@@ -304,6 +320,8 @@ footer>a.instar:hover {
     font-size: 28px;
     font-weight: 400;
     opacity: 1;
+    transition: all .6s;
+    transition-delay: 1.2s;
 }
 
 #container .content.this h2:after {

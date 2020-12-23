@@ -12,14 +12,14 @@
 
 /* ------------헤더------------ */
 
-header .logo-box {
+header .logo_box {
     position: absolute;
     right: 35px;
     top: 75px;
     cursor: pointer;
 }
 
-header .logo-box img {
+header .logo_box img {
     width: 100px;
 }
 
@@ -159,11 +159,21 @@ footer>a.instar:hover {
     transition: all .5s;
 }
 
+/* 선택된 화면일 때 최대 width 정해주고 텍스트 중앙 위치 */
+#container .content.this .conbox {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 /* 자바스크립트로 슬라이드 효과를 내기 위한 클래스들 */
 
 #container .content.this {
     width: 100%;
     left: 0 !important;
+    /* 스크롤 생성 */
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 #container .content.prev {
@@ -341,6 +351,8 @@ footer>a.instar:hover {
 #container .content.this .conbox .content_wrap {
     padding: 30px 50px 50px 50px;
     opacity: 1;
+    transition: all 1.7s;
+    transition-delay: .8s;
 }
 
 /* 메인 페이지 애니메이션 효과 */
@@ -364,4 +376,51 @@ footer>a.instar:hover {
 
 #container.start .content {
     top: 0;
+}
+
+/* ------------------------------------- */
+
+/* 제목 */
+.pargrph_tit {
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+}
+
+/* 제목 언더라인 (디자인 요소) */
+.pargrph_tit::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 8px;
+    background: #ed3140;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+/* 문단 */
+.text_box h4 {
+    font-size: 40px;
+    color: #d6d4d4;
+    font-weight: 700;
+}
+
+.text_box p {
+    margin-bottom: 50px;
+    color: #ababab;
+    line-height: 20px;
+}
+
+.text_box:nth-child(odd) {
+    text-align: left;
+}
+
+.text_box:nth-child(even) {
+    text-align: right;
+}
+
+.text_box:nth-last-child(1) h4 {
+    color: #ed3140;
 }

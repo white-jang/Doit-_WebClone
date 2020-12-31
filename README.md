@@ -105,3 +105,23 @@ CSS 벤더 프리픽스(접두어)의 예시 (border-radius)
 완성된 페이지들의 통일성을 맞추거나 애니메이션의 퀄리티를 높이기 위해  
 CSS를 재작성하거나 수정하는 일  
   
+# 6 Chap  
+  
+**🔹1. float 속성**  
+float 속성은 사용 후 반드시 해제해야 한다.  
+해제할 때는 overflow, clear 속성을 이용할 수도 있지만, 책에서는 가상 요소를 사용하여 해제했다.  
+실무에서는 가상 요소를 사용하여 해제하는 것이 일반적이라고 한다.  
+```
+.detail_content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+```
+  
+**🔹2. <\em>태그**  
+텍스트 내용을 강조할 때 사용하는 태그.  
+strong, b, em, i 등의 태그를 분리해서 사용해야 웹 표준을 지킬 수 있다.  
+관련해서 찾은 참고하기 좋은 사이트들:  
+<\em>vs<\strong> : http://www.tcpschool.com/html-tags/em  
+<\strong>, <\em>, <\b>, <\i>를 구분해서 사용하자! : https://blog.acronym.co.kr/358  

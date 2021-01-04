@@ -22,5 +22,12 @@ $(document).ready(function(){
         $(".content").removeClass("prev this next"); 
         $("#container").css("max-width", "1200px");
     });
+    $(".roll_left").click(function() {
+        $(".book_roll li").eq(0).insertAfter(".book_roll li:last-child");
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+    });
+    $(".roll_right").click(function() {
+        $(".book_roll li").eq(-1).insertBefore(".book_roll li:first-child");
+    });
 });
 

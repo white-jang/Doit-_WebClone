@@ -424,3 +424,170 @@ footer>a.instar:hover {
 .text_box:nth-last-child(1) h4 {
     color: #ed3140;
 }
+
+/* 도서 상세 내용 페이지 */
+#menu2.content h3 {
+    font-size: 0px;
+}
+
+#menu2.content.this .conbox {
+    background: url(../images/bookbg.png) no-repeat -15px 360px;
+    max-width: 100%;
+}
+
+.notebook {
+    width: 954px;
+    height: 650px;
+    margin: 100px auto 0 auto;
+    background: url(../images/mackbook.png) no-repeat;
+    background-size: 954px;
+    position: relative;
+}
+
+.detail_content {
+    width: 791px;
+    height: 453px;
+    position: absolute;
+    left: 117px;
+    top: 38px;
+    padding: 30px 0;
+}
+
+.img_book {
+    width: 270px;
+    float: left;
+}
+
+.img_book img {
+    width: 270px;
+}
+
+.book_description {
+    width: 449px;
+    float: left;
+    padding: 20px 20px 20px 40px;
+}
+
+.detail_content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.book_description h4 {
+    font-size: 31px;
+    font-weight: 700;
+    color: #f92d68;
+    line-height: 31px;
+}
+
+.book_description ul li em {
+    font-weight: 700;
+}
+
+.bullet_list {
+    margin-top: 20px;
+}
+
+.bullet_list li {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #3c4147;
+    position: relative;
+}
+
+.bullet_list li::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #3c4147;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.point_text {
+    padding: 10px 30px 0px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.point_text strong {
+    display: block;
+    padding: 0 0 10px 46px;
+    background: url(../images/point_bg.png) no-repeat;
+    background-size: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #3c4147;
+}
+
+.commbtn {
+    width: 150px;
+    display: inline-block;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 35px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.commbtn.pink {
+    background: #f92d68;
+    color: #fff;
+}
+
+.book_rollwrap {
+    width: 954px;
+    height: 150px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.book_rollwrap>button {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    top: 0;
+}
+
+.book_rollwrap>button.roll_left {
+    background: url(../images/btn_left.png) no-repeat center center;
+    background-size: 20px;
+    left: 0;
+}
+
+.book_rollwrap>button.roll_right {
+    background: url(../images/btn_right.png) no-repeat center center;
+    background-size: 20px;
+    right: 0;
+}
+
+.book_rollwrap .book_roll {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* overflow를 hidden으로 설정하여 화면에 보이는 영역 외에 존재하는 li를 숨김 */
+}
+
+.book_rollwrap .book_roll ul {
+    width: 1000%;
+    /* ul 안의 li는 계속해서 옆으로 추가되어야 하므로 width를 1000%로 설정 */
+}
+
+.book_rollwrap .book_roll ul li {
+    float: left;
+    width: 152px;
+    text-align: center;
+    color: #fff;
+}
+
+.book_rollwrap .book_roll ul li img {
+    width: 100px;
+}

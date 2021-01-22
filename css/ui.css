@@ -602,3 +602,85 @@ footer>a.instar:hover {
 .book_rollwrap .book_roll ul li img {
     width: 100px;
 }
+
+/* ------------ 8강 (FAQ) */
+
+.tit_faq {
+    color: #fff;
+}
+
+.tit_faq strong {
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.tit_faq span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.accordio_box {
+    margin-top: 100px;
+}
+
+.accordio_box ol li {
+    width: 100%;
+    background: #fff;
+    border-top: 4px solid #EA657B;
+}
+
+.accordio_box ol li h4 {
+    display: block;
+    padding: 0px 20px 20px 0;
+    margin: 20px 20px 0 30px;
+    cursor: pointer;
+    background: url(../images/select_bullet_up.png) no-repeat right 11px;
+    font-weight: 400;
+    color: #3c4147;
+}
+
+.accordio_box ol li.on h4 {
+    background: url(../images/select_bullet_down.png) no-repeat right 11px;
+}
+
+.accordio_box ol li h4 span {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+.accordio_box ol li.on p {
+    height: auto;
+    padding: 30px 100px 70px 200px;
+    background-color: #eee;
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    visibility: visible;
+    opacity: 1;
+}
+
+.accordio_box ol li p {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.accordio_box ol li:nth-of-type(1) p {
+    background-image: url(../images/board_boy.png);
+    background-position: 40px -1px;
+}
+
+.accordio_box ol li:nth-of-type(2) p {
+    background-image: url(../images/read_boy.png);
+    background-position: 40px 20px;
+}
+
+.accordio_box ol li:nth-of-type(3) p {
+    background-image: url(../images/shopping_boy.png);
+    background-position: 40px 13px;
+}
+
+.accordio_box ol li:nth-of-type(4) p {
+    background-image: url(../images/meeting_boy.png);
+    background-position: 40px 13px;
+}

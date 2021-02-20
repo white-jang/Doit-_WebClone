@@ -547,10 +547,19 @@ footer>a.instar:hover {
     text-align: center;
 }
 
+/* ------------------- */
+
 .commbtn.pink {
     background: #f92d68;
     color: #fff;
 }
+
+.commbtn.gray {
+    background: #3c4147;
+    color: #fff;
+}
+
+/* ------------------- */
 
 .book_rollwrap {
     width: 954px;
@@ -683,4 +692,77 @@ footer>a.instar:hover {
 .accordio_box ol li:nth-of-type(4) p {
     background-image: url(../images/meeting_boy.png);
     background-position: 40px 13px;
+}
+
+/* ------------ 9강 (Contact Us) */
+
+#menu4 .content_wrap {
+    width: 800px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+
+#menu4 .content_wrap .form_tit {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ea567b;
+}
+
+.formlist {
+    padding-bottom: 150px;
+    background: url(../images/contact_bg.png) no-repeat right bottom;
+    background-size: 200px;
+}
+
+.formlist ul li {
+    margin-bottom: 15px;
+    position: relative;
+    padding: 0 0 0 150px;
+}
+
+.formlist ul li label {
+    display: block;
+    width: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.formlist ul li label sup {
+    color: #ea567b;
+}
+
+.formlist ul li span {
+    display: block;
+}
+
+.formlist ul li .inputbox {
+    width: 100%;
+    height: 40px;
+    border: solid 1px #ddd;
+    background: #fff;
+}
+
+.formlist ul li .textbox {
+    width: 100%;
+    height: 200px;
+    border: solid 1px #ddd;
+    background: #fff;
+}
+
+.formlist ul li input,
+.formlist ul li textarea {
+    width: 100%;
+    height: 100%;
+}
+
+.btn_box {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
 }

@@ -766,3 +766,31 @@ footer>a.instar:hover {
     margin-top: 20px;
     text-align: center;
 }
+
+.thankyou_message {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: none;
+}
+
+.thankyou_message>section>h1 {
+    color: #59c3c3;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.thankyou_message>section {
+    width: 550px;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    background: url(../images/contact_pop.jpg) no-repeat #fff right bottom;
+    background-size: 240px;
+    color: #3c4147;
+}

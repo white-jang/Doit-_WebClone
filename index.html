@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/ui.css">
 </head>
+<script data-cfasync="false" type="text/javascript" src="./js/form-submission-handler.js"></script>
 
 <body>
     <!-- 전체 컨텐츠 영역 -->
@@ -178,7 +179,9 @@
                 <div class="conbox">
                     <section class="content_wrap">
                         <h3 class="form_tit">지금 이지스퍼블리싱에 물어보세요!!</h3>
-                        <form class="gform" method="post" action="" name="contactus">
+                        <form class="gform" method="post"
+                            action="https://script.google.com/a/likelion.org/macros/s/AKfycbx0E0mkXArW0PJXQ1R9wvDtgVCNhFEc9vVRz2bRgA/exec"
+                            name="contactus">
                             <fieldset>
                                 <legend>Contact Us</legend>
                                 <div class="formlist">
@@ -202,6 +205,15 @@
                                 </div>
                                 <div class="btn_box">
                                     <button type="submit" class="commbtn gray">문의하기</button>
+                                </div>
+                                <div class="thankyou_message">
+                                    <section>
+                                        <h1>작성 완료되었습니다.</h1>
+                                        <p>확인 후 빠르게 답변 드리겠습니다.</p>
+                                        <div class="btn_box">
+                                            <a href="#" class="commbtn gray close">닫기</a>
+                                        </div>
+                                    </section>
                                 </div>
                             </fieldset>
                         </form>

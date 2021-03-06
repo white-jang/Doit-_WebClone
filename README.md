@@ -1,16 +1,16 @@
-<h1>Doit_WebClone</h1>
+<h1>Do it! Web Clone</h1>
 <br/>  
   
-# 💌소개 
+# 💌 소개 
 `Do it! Web clone 웹 사이트 따라 만들기`를 따라 완성한 웹 사이트 예제입니다.  
   
-# 🛠기술 스택  
+# 🛠 기술 스택  
 ✔HTML, CSS, JQuery를 활용하여 제작  
 ✔구글 앱스 메일 API를 활용하여 문의 메일 처리  
 ✔Ajax를 활용하여 책 소개 페이지 구성  
 <br/>  
 
-# 💾챕터별 정리
+# 💾 챕터별 정리
 
 # 1 Chap
 
